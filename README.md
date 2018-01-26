@@ -1,2 +1,5 @@
 # hosp-web
-webpage made using html,css,bootstrap and js.
+
+Hospital website made using Html,Css,Js and boostrap
+
+It is made to avail the nearest ambulace by tracking the coordinates of location.
