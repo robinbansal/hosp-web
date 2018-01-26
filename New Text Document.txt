@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+}
+.boxed1 {
+  border: 1px ;
+  height: 370px;
+  width: 300px;
+  background-color: #0099ff;
+  align-self: right;
+    margin-right:60px;
+    
+}
+.button {
+  font: bold 18px Arial;
+  text-decoration: none;
+  background-color: #ff3399;
+  color: white;
+}
+.tales {
+  width: 30%;
+}
+.carousel-inner{
+  width:30%;
+  ;
+}
+.caraosel-caption{
+  position: absolute;
+    top: 0%;
+    bottom: auto;
+</style>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<ul>
+  <li style="width: 1300px"><a class="active" href="#home"><marquee direction="right" scrollamount="15"><P style="font-color: white; font-size: 50px;">HELPING HANDS<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1oUG9qdepQl0A0rsn2TLN01SQ0VsQlOJI2tIUb7r4cbXhXd8w" hspace="20" style="height: 35px; width:50px;white-space: pre;"></P></marquee></img></a></li></ul>
+
+  <div style="float: left; background-size: contain;height: 450px;width: 950px;margin-left: 40px; background-image:url('final.jpg'); opacity: 0.5"> <span style="color: black;font-size: 40px;"><i>We provide 24 X 7 emergency support. You can get an ambulance at your door in the shortest time possible from the best hospitals in your town. </i></span>
+    
+
+  </div>
+ 
+
+   <div align="right" style="margin:2px">
+     <p align="center" style="margin-bottom: 0px; padding: 15px 0px;"><a href="tel: 8882978888"> <button class="call-btn"><i class="glyphicon glyphicon-earphone"></i> +91-9560287707</button> </a>
+                                  <br><i style="font-size:12px;margin-top:2px;">** For Extreme medical emergency, Call <b>102</b></i>
+              </p> 
+
+<div class="boxed1">
+<div style="margin:20px">
+<h2 style="font-family: arial-black;color:white;font-weight: 700; text-align: center;"> Provide your details </h2><hr>
+<form name="myform" onsubmit="return CheckPwd()" style="text-align: left;margin: 20px;font-size: 15px;font-family: arial ;" method="post">
+<p style="margin-top: 40px;">
+ <input type="text" name="fn" placeholder="First Name" style=" font-size: 15px;text-align: left;width: 100%;height: 40px;" required><br><br>
+  <input type="text" name="tn" placeholder="Last Name" style=" font-size: 15px;text-align: left;width: 100%;height: 40px;" required><br><br>
+
+ <input type="email" name="ID" placeholder="Email Id" style=" font-size: 15px;text-align: left;width: 100%;height: 40px;" required><br><br>
+  
+<input type="number" name="ID" placeholder=" Contact Number" style=" font-size: 15px;text-align: left;width: 100%;height: 40px;" required><br> <br>
+
+  <a href="ui.html" class="button">Look for an Ambulance</a> </form>
+  
+   </div>
+   </div>
+   <br>
+   <div class="container">
+  <h2 style="text-align: center;">Previous Patients</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://www.runscope.com/static/img/public/customer-portrait-human-api.png" alt="Patient1" style="background-size: contain" class="tales">
+        <div class="carousel-caption"><h3>Patient1</h3><p style="text-align: top;color: black">LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum</p></div>
+      </div>
+
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSdxT9RCFVJhPjBqrYAgLR4lvYB6MJR1k0cJOOJxpGSUj-9RqC" alt="Patient2" style="background-size: contain" class="tales"><div class="carousel-caption"><h3>Patient2</h3><p style="text-align: top;color: black">LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum</p></div>
+      </div>
+    
+      <div class="item">
+        <img src="https://graduates.westpacgroup.com.au/sites/default/files/human_resources.png" alt="Patient3" style="background-size: contain" class="tales"><div class="carousel-caption"><h3>Patient3</h3><p style="text-align: top;color: black">LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum LoremIpsum</p></div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
