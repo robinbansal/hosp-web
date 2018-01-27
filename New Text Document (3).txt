@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <style>
+        
+        body{background-color: antiquewhite
+            
+        }
+        
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        
+    </head>
+<body background="http://www.allwhitebackground.com/images/1/Ambulance-6.jpg" style="background-size: cover">
+
+<h1>
+   <font color="RED"> Nearest hospitals</font></h1>
+
+    <h2> FORTIS ESCORTS HEART INSTITUTE AND RESEARCH CENTRE</h2>
+    <STRONG><ul class="list-group" type="circle">
+    <li class="list-group-item">Contact no:01147135000</li>
+        <li class="list-group-item">Address:OKHLA ROAD ,NEWDELHI </li>
+    
+        </ul></STRONG>
+    <p align="center"><button onclick="abc()">Time of FORTIS from your location(min).</button></p>
+        <p style="color: red;font-size: 40px" id="111"><b></b></p>
+
+   
+    <br>
+    <strong><h2>AIIMS</h2> 
+    <ul class="list-group">
+    <li class="list-group-item">Contact no:01112587965</li>
+        <li class="list-group-item">Address:ANSARI NAGAR ,NEW DELHI </li>
+        </ul></strong>
+       
+    <p align="center"> <button onclick="ab()">Time of AIIMS from your locatiion(min)</button></p>
+        <p style="color: red;font-size: 40px" id="211"><b></b></p>
+    <br>
+    <h2> MEDANTA HOSPITAL</h2>
+    <STRONG><ul class="list-group">
+    <li class="list-group-item">Contact no:01125968784</li>
+        <li class="list-group-item">Address: SECTOR -38 ,GURUGRAM ,HARYANA</li>
+        </ul></STRONG>
+   <p align ="center"> <button onclick="a()">Time of MEDANTA from your location.(min)</button></p> 
+    <p style="color: red;font-size: 40px" id="123"><b></b></p>
+<p>Click the button to get your coordinates.</p>
+<br><br>
+    <p align="center"><button onclick="getLocation()">Try It</button></p>
+        <p style="color: red;font-size: 40px" id="100"><b></b></p>
+    
+<p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+  
+document.getElementById("100").innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+     
+    
+    </script>
+
+    
+    
+    <p id="lo"></p>
+    <script>
+       
+     function cal(lat1, lon1, lat2, lon2) 
+    {
+        var lat1;
+           var lon1;
+        var lat2;
+        var lon2;
+
+      var R = 6371; // km
+      var dLat = toRad(lat2-lat1);
+      var dLon = toRad(lon2-lon1);
+      var lat1 = toRad(lat1);
+      var lat2 = toRad(lat2);
+
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+      var d = R * c;
+      console.log("value of d" + d);
+        var time =(d/40)*60;
+        return time;
+    }
+
+    // Converts numeric degrees to radians
+    function toRad(Value) 
+    {
+        return Value * Math.PI / 180;
+    }
+        function abc(){
+       
+            document.getElementById("111").innerHTML=cal(28.65,77.21,28.56,77.27);
+        }
+        
+
+    </script>
+    
+    
+    <!-- 
+second distance   aiims-->>
+    
+     <p id="po"></p>
+    <script>
+       
+     function calm(lat1, lon1, lat3, lon3) 
+    {
+        var lat1;
+           var lon1;
+        var lat3;
+        var lon3;
+
+      var R = 6371; // km
+      var dLat = t1Rad(lat3-lat1);
+      var dLon = t1Rad(lon3-lon1);
+      var lat1 = t1Rad(lat1);
+      var lat3 = t1Rad(lat3);
+
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat3); 
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+      var l = R * c;
+       var time2=(l/40)*60;
+        return time2;
+    }
+
+    // Converts numeric degrees to radians
+    function t1Rad(Value) 
+    {
+        return Value * Math.PI / 180;
+    }
+        function ab(){
+     
+             document.getElementById("211").innerHTML=calm(28.65,77.21,28.56,77.20);
+        }</script>
+    
+    <!-- third distance
+-->>
+    
+     <p id="ko"></p>
+    <script>
+       
+     function cali(lat1, lon1, lat4, lon4) 
+    {
+        var lat1;
+           var lon1;
+        var lat4;
+        var lon4;
+
+      var R = 6371; // km
+      var dLat = tmRad(lat1-lat4);
+      var dLon = tmRad(lon1-lon4);
+      var lat1 = tmRad(lat1);
+      var lat4 = tmRad(lat4);
+        
+
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat4); 
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+      var v = R * c;
+    var ti=(v/40)* 60;
+        return ti;
+    }
+
+    // Converts numeric degrees to radians
+    function tmRad(Value) 
+    {
+        return Value * Math.PI / 180;
+    }
+        function a(){
+        
+        document.getElementById("123").innerHTML=cali(28.65,77.21,27.86,77.69);
+        }</script>
+    
+</body>
+</html>
+
+
